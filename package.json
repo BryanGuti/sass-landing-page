@@ -1,0 +1,12 @@
+{
+  "name": "sass-landing-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev:pug": "pug --watch --pretty ./src/assets/pug/index.pug --out ./src/"
+  },
+  "keywords": [],
+  "author": "Bryan Gutierrez Alvarez <bryguti.alvarez@gmail.com>",
+  "license": "MIT",
+  "description": ""
+}
