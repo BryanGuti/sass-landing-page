@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev:pug": "pug --watch --pretty ./src/assets/pug/index.pug --out ./src/"
+    "dev:pug": "npx pug --watch --pretty src/assets/pug/index.pug --out src/",
+    "dev:sass": "npx sass --watch src/assets/sass:src/assets/css"
   },
   "keywords": [],
   "author": "Bryan Gutierrez Alvarez <bryguti.alvarez@gmail.com>",
   "license": "MIT",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.76.0"
+  }
 }
