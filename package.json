@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev:pug": "npx pug --watch --pretty src/assets/pug/index.pug --out src/",
-    "dev:sass": "npx sass --watch src/assets/sass:src/assets/css"
+    "dev:sass": "npx sass --watch src/assets/sass:src/assets/styles"
   },
   "keywords": [],
   "author": "Bryan Gutierrez Alvarez <bryguti.alvarez@gmail.com>",
