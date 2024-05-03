@@ -1,0 +1,48 @@
+.header
+	display: flex
+	position: fixed
+	width: 100%
+	left: 0
+	justify-content: space-between
+	align-items: center
+	padding-inline: 12rem
+	padding-block: 2rem
+	backdrop-filter: blur(.4rem)
+
+	.brand__title
+		@include font(400)
+		color: $primary-text-color
+		font-size: 6rem
+		text-wrap: nowrap
+
+		&:hover
+			color: $active-color
+
+	.menu__list
+		display: flex
+		gap: 6rem
+
+		.list__item
+			cursor: pointer
+			scale: 1.2
+			transition: .2s
+
+			.item__link
+				display: flex
+
+				.menu-icon
+					stroke: $primary-text-color
+
+			&:hover
+				scale: 1.4
+
+				.menu-icon
+					stroke: $active-color
+
+			&:active
+				scale: 1.2
+
+			&--active
+				.item__link
+					.menu-icon
+						stroke: $active-color
