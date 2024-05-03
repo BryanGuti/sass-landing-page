@@ -1,0 +1,54 @@
+.hero
+	display: flex
+	height: 100dvh
+	align-items: center
+	justify-content: space-around
+	gap: 8rem
+	padding-top: 12rem
+	padding-bottom: 6rem
+	padding-inline: 4rem
+
+	&__info
+		display: flex
+		flex-direction: column
+		gap: 6rem
+		max-width: 50%
+
+		.info__message
+			display: flex
+			flex-direction: column
+			gap: 2rem
+
+			.message__title
+				font-weight: 500
+				font-size: 7.2rem
+				color: $primary-text-color
+
+			.message__description
+				font-size: 2.4rem
+				color: $primary-text-color
+
+		.info__cta
+			display: flex
+
+			.cta__button
+				font-size: 2.4rem
+				font-weight: 700
+				background-color: $active-color
+				padding-inline: 6rem
+				padding-block: 2.4rem
+				border-radius: 4rem
+				color: $primary-color
+				transition: .2s
+
+				&:hover
+					scale: 1.1
+
+				&:active
+					scale: 1
+
+	&__image
+		width: 40%
+
+		img
+			width: 100%
