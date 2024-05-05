@@ -3,10 +3,12 @@
 	height: 100dvh
 	align-items: center
 	justify-content: space-around
-	gap: 8rem
+	// gap: 8rem
+	gap: clamp(1rem, 4dvw, 8rem)
 	padding-top: 12rem
 	padding-bottom: 6rem
-	padding-inline: 4rem
+	// padding-inline: 4rem
+	padding-inline: clamp(0rem, 3dvw, 4rem)
 
 	&__info
 		display: flex
@@ -14,41 +16,59 @@
 		gap: 6rem
 		max-width: 50%
 
-		.info__message
-			display: flex
-			flex-direction: column
-			gap: 2rem
-
-			.message__title
-				font-weight: 500
-				font-size: 7.2rem
-				color: $primary-text-color
-
-			.message__description
-				font-size: 2.4rem
-				color: $primary-text-color
-
-		.info__cta
-			display: flex
-
-			.cta__button
-				font-size: 2.4rem
-				font-weight: 700
-				background-color: $active-color
-				padding-inline: 6rem
-				padding-block: 2.4rem
-				border-radius: 4rem
-				color: $primary-color
-				transition: .2s
-
-				&:hover
-					scale: 1.1
-
-				&:active
-					scale: 1
-
 	&__image
-		width: 40%
+		width: 36%
 
 		img
 			width: 100%
+
+.info__message
+	display: flex
+	flex-direction: column
+	gap: rem
+	gap: clamp(0rem, 1dvw,2rem)
+
+.message__title
+	font-weight: 500
+	// font-size: 7.2rem
+	// line-height: 4rem
+	line-height: clamp(4rem, 6dvw, 7rem)
+	font-size: clamp(4rem, 6dvw, 7.2rem)
+	color: $primary-text-color
+
+.message__description
+	// font-size: 2.4rem
+	font-size: clamp(1.6rem, 3dvw, 2rem)
+	color: $primary-text-color
+
+.info__cta
+	display: flex
+
+.cta__button
+	// font-size: 2.4rem
+	font-size: clamp(1.6rem, 4dvw, 2.4rem)
+	font-weight: 700
+	background-color: $active-color
+	padding-inline: 6rem
+	padding-block: 2.4rem
+	border-radius: 4rem
+	color: $primary-color
+	transition: .2s
+
+	&:hover
+		scale: 1.1
+
+	&:active
+		scale: 1
+
+@media ( width <= 900px )
+	.hero
+		flex-direction: column-reverse
+		height: min-content
+
+		&__image
+			width: 100%
+
+		&__info
+			max-width: 100%
+			align-items: center
