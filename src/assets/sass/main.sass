@@ -1,19 +1,11 @@
 @import 'base'
 
 body
-	padding-inline: 8rem
+	padding-inline: clamp(1rem, 3dvw, 8rem)
 	background-color: $primary-color
 
 .page
-	padding-inline: 6rem
-	// overflow-y: scroll
-	// scroll-snap-type: y mandatory
-
-.page > :not(.header)
-	// scroll-snap-align: start
+	padding-inline: clamp(1rem, 3dvw, 6rem)
 
 @import 'header'
 @import 'hero'
-
-.products
-	height: 100dvh
