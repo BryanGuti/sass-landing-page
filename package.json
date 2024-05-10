@@ -5,15 +5,15 @@
   "scripts": {
     "dev:pug": "npx pug --watch --pretty src/assets/pug/index.pug --out src/",
     "dev:sass": "npx sass --watch src/assets/sass:src/assets/styles",
-    "build:pug": "npx pug src/assets/pug/index.pug --out dist/",
-    "build:sass": "npx sass src/assets/sass:dist/assets/styles",
-    "build:assets": "cp -r src/assets/img dist/assets/ && cp -r src/assets/icons dist/assets/ && cp -r src/assets/scripts dist/assets/"
+    "build": "npx gulp build"
   },
   "keywords": [],
   "author": "Bryan Gutierrez Alvarez <bryguti.alvarez@gmail.com>",
   "license": "MIT",
   "description": "",
   "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-cli": "^3.0.0",
     "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.76.0"
   }
