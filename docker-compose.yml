@@ -1,0 +1,8 @@
+services:
+  web-page:
+    container_name: 'sass-pug-landing-page'
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - "./dist:/usr/local/apache2/htdocs"
