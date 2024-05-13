@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev:pug": "npx pug --watch --pretty src/assets/pug/index.pug --out src/",
-    "dev:sass": "npx sass --watch src/assets/sass:src/assets/styles",
-    "build": "npx gulp build",
-    "serve": "npx gulp build && docker compose up -d"
+    "dev:pug": "pug --watch --pretty src/assets/pug/index.pug --out src/",
+    "dev:sass": "sass --watch src/assets/sass:src/assets/styles",
+    "build": "gulp build",
+    "serve": "gulp build && docker compose up -d"
   },
   "keywords": [],
   "author": "Bryan Gutierrez Alvarez <bryguti.alvarez@gmail.com>",
